@@ -1,0 +1,29 @@
+	
+	.ac-results {
+		border: 1px solid gray;
+		background-color: white;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		z-index: 10000;
+		display: none;
+	}
+	
+	.ac-results li {
+		padding: 2px 5px;
+		white-space: nowrap;
+		color: #101010;
+		text-align: left;
+	}
+	
+	.ac-over {
+		cursor: pointer;
+		background-color: #c4e192;
+	}
+	
+	.ac-match {
+		text-decoration: underline;
+		color: black;
+	}
+	

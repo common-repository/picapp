@@ -1,0 +1,567 @@
+#picapp-postbox-wrap {
+	height: 680px;	
+}
+
+#picapp-postbox {
+	height: 680px;
+	overflow: hidden;
+	width: 100%;
+}
+
+html.iframe-postbox-page {
+	overflow: hidden;
+}
+
+
+#picapp-metabox .inside {
+	font-family:Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+	#picapp-metabox h3 {
+		margin-bottom: 0px;
+	}
+
+
+body.picapp-iframe {
+	height: 670px;
+	margin: 0;
+	padding: 0;
+}
+	body.picapp-iframe a {
+		color: #000;
+	}
+
+	body.picapp-iframe a img {
+		border: none;
+	}
+
+#picapp-metabox-wrap {
+	font-family:Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+	#picapp-metabox-wrap .picapp-metabox-header {
+		background: url('../images/picappbeta-header-bg-small.jpg') repeat-x top left;
+		height: 79px;
+		overflow: hidden;
+	}
+
+		.picapp-metabox-header .picapp-logo {
+			float: left;
+			margin-left: 1em;
+			width: 220px;
+		}
+			.picapp-metabox-header .picapp-logo a {
+				background: url('../images/picappbeta-logo-small.jpg') no-repeat top left;
+				display: block;
+				height: 79px;
+				overflow: hidden;
+				text-align: left;
+				text-indent: -999em;
+				width: 207px;
+			}
+
+		.picapp-metabox-header .picapp-login {
+			float: right;
+			font-weight: bolder;
+			line-height: 79px;
+			margin: 1em;
+			text-transform: lowercase;
+		}
+			.picapp-metabox-header .picapp-login a {
+				color: #000;
+				text-decoration: none;
+			}
+
+			.picapp-metabox-header .picapp-login a:hover {
+				text-decoration: underline;
+			}
+
+			.picapp-metabox-header .picapp-login .picapp-sep {
+				margin: .5em;
+			}
+
+.picapp-metabox-search {
+}
+	.picapp-metabox-search label {
+		color: #F17E1E;
+		display: block;
+		font-size: 13px;
+		font-weight: bolder;
+		line-height: 26px;
+		position: absolute;
+		text-transform: lowercase;
+		top: 10px;
+		width: 93px;
+	}
+
+	#picapp-creative-label {
+		right: 110px;
+	}
+	
+	#picapp-editorial-label {
+		right: 203px;
+	}
+
+	#picapp-search-wrapper {
+		background: #615955 url('../images/search-box-2.gif') right top no-repeat;
+		margin: 1em;
+	}
+	
+	* html #picapp-search-wrapper {
+		width: 650px;
+		margin: 1em auto;
+	}
+		#picapp-search-key-term {
+			border-color:#8A8A8A rgb(214, 214, 214) rgb(214, 214, 214) rgb(138, 138, 138);
+			border-style:solid;
+			border-width:1px;
+			color:#000;
+			display:block;
+			font-size:13px;
+			height:16px;
+			left:41px;
+			line-height:18px;
+			margin:0pt;
+			padding:4px;
+			position:absolute;
+			right: 300px;
+			top:10px;
+		}
+
+		<!--[if lt IE 7]>
+		#picapp-search-key-term {
+			width: expression(document.getElementById('picapp-search-area').clientWidth-341); »
+		/* 41 + x + 300 = width of wrapper */  
+		}
+		<![endif]-->
+
+		* html #XXXXXpicapp-search-key-term {
+			width:301px;
+		}
+
+		#picapp-search-area {
+			background: url('../images/search-box-1.gif') left top no-repeat;
+			height: 46px;
+			overflow: hidden;
+			padding:0px 0px 0px 10px;
+			position: relative;
+		}
+
+		.picapp-metabox-search-rss {
+			background: url('../images/ico-rss.gif') top center no-repeat;
+			display: block;
+			height: 21px;
+			margin: 0px;
+			padding: 0px;
+			width: 21px;
+		}
+
+			.picapp-metabox-search-rss a {
+				cursor: pointer;
+			}
+
+				.picapp-metabox-search-rss a span {
+					display: block;
+					height: 21px;
+					overflow: hidden;
+					text-indent: -999em;
+					width: 21px;
+				}
+			
+			#picapp-search-rss-wrap {
+				display: block;
+				height: 21px;
+				left: 10px;
+				margin: 0px;
+				padding: 0px;
+				position: absolute;
+				top: 12px;
+			}
+
+			#picapp-search-rss-wrap .no-search {
+				visibility: hidden;
+			}
+
+		#picapp-search-submit {
+			background: url('../images/btn-search-form.gif') top left no-repeat;
+			border: none;
+			cursor: pointer;
+			display: block;
+			float: left;
+			height: 26px;
+			overflow: hidden;
+			position: absolute;
+			right: 10px;
+			text-align: left;
+			text-indent: -999em;
+			top: 10px;
+			width: 102px;
+		}
+
+/* The login box */
+#picapp-publish-login-reminder-form {
+}
+	#picapp-publish-login-reminder-form #picapp-act {
+		float: right;
+	}
+
+
+#picapp-login-msg {
+	margin: 1em auto;
+	text-align: center;
+}
+	.picapp-login-loading {
+		text-align: center;
+	}
+
+#picapp-login-msg span {
+	font-weight: bold;
+	padding: 1em;
+	text-align: center;
+}
+#picapp-login-msg span.error {
+	color: red;
+	display: block;
+}
+
+#picapp-login-form {
+}
+	.picapp-modal-form fieldset {
+		background: url('../images/lower-left-corner.gif') repeat-x bottom left;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.picapp-modal-form .picapp-options-wrap {
+		background: url('../images/lower-right-corner.gif') no-repeat bottom right;
+		display: block;
+		padding: 1em 1em 26px 1em;
+		position: relative;
+		height: 1%;
+	}
+
+	.picapp-modal-form .picapp-options-wrap:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+		#picapp-embed-code {
+			margin: 0 auto;
+			width: 345px;
+		}
+
+		#picapp-detail-embed {
+			background: url('../images/embed.jpg') no-repeat top center;
+			border: none;
+			cursor: pointer;
+			display: block;
+			height: 32px;
+			overflow: hidden;
+			text-align: left;
+			text-indent: -999em;
+			width: 182px;
+		}
+
+		#picapp-detail-copy {
+			cursor: pointer;
+			float: right;
+			width: 150px;
+		}
+
+	.picapp-modal-form .picapp-detailbox-options-wrap {
+		background: url('../images/upper-left-corner.gif') no-repeat top left;
+		margin: 1em 0 1em 1em;
+		overflow: hidden;
+		padding: 0;
+		width: 380px;
+	}
+		.picapp-modal-form .picapp-detailbox-options-wrap legend {
+			font-weight: bold;
+			line-height: 26px;
+			padding-left: 1em;
+		}
+
+	.picapp-modal-form .picapp-detailbox-options-panel {
+		background: url('../images/upper-right-corner.gif') no-repeat top right;
+		margin: 0;
+		overflow: hidden;
+		width: 380px;
+	}
+
+	.picapp-modal-form p {
+		margin-bottom: 2em;
+	}
+
+	.picapp-modal-form .picapp-form-label {
+		display: block;
+		font-weight: bold;
+	}
+
+	.picapp-modal-form .picapp-form-field {
+		display: block;
+	}	
+
+	.picapp-forgot-password-link {
+		display: block;
+		float: left;
+	}
+
+	#picapp-submit {
+		background: url('../images/btn-login.gif') top center no-repeat;
+		border: none;
+		cursor: pointer;
+		display: block;
+		float: right;
+		height: 26px;
+		margin: 1em;
+		overflow: hidden;
+		padding: 0px;
+		text-align: left;
+		text-indent: -999em;
+		width: 82px;
+	}
+
+#picapp-logout-form {
+}
+	#picapp-logout-form button {
+		float: right;
+	}
+
+#picapp-logout-prompt-dialog {
+	padding-bottom: 2em;
+}
+	#picapp-logout-prompt-dialog button {
+		margin-right: 1em;
+	}
+
+#picapp-retrieve-password {
+	background: url('../images/btn-form-send.gif') top center no-repeat;
+	border: 0px;
+	cursor: pointer;
+	display: block;
+	height: 29px;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	text-indent: -999em;
+	width: 60px;
+}
+
+/* the search results area */
+
+.picapp-search-results-wrap {
+	margin: 0 8px;
+}
+	.picapp-search-results-wrap .picapp-search-results-info {
+		text-align: right;
+	}
+
+	.picapp-search-results-wrap .picapp-search-results-thumbs {
+		margin: 0 auto;
+		overflow: hidden;
+		width: 662px;
+	}
+
+	.picapp-search-results-wrap .picapp-thumb {
+		border: 1px solid;
+		float: left;
+		height: 100px;
+		margin: 4px;
+		overflow: hidden;
+		text-align: center;
+		width: 100px;
+	}
+	
+	* html .picapp-search-results-wrap .picapp-thumb {
+		margin: 4px 3px;
+	}
+
+	.picapp-search-results-wrap .picapp-thumb img.v {
+		height: 100px;
+	}
+	
+	.picapp-search-results-wrap .picapp-thumb img.h {
+		width: 100px;
+	}
+	
+	.picapp-search-results-wrap .picapp-search-results-footer {
+		float: right;
+		font-size: smaller;
+		text-align: right;
+		width: 450px;
+	}
+
+/* the full size image */
+.picapp-detailbox-wrap {
+	position: static;
+}
+	.picapp-detailbox-wrap h2.image-title {
+		background: url('../images/background-header.png') no-repeat top left;
+		color: #fff;
+		font-size: 13px;
+		height: 22px;
+		line-height: 22px;
+		margin: 0px;
+		padding: 0 5px;
+		overflow: hidden;
+		text-align: left;
+		width: 800px;
+	}
+
+	.picapp-detailbox-main {
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 410px;
+	}
+		.picapp-detailbox-wrap #picapp-login-msg {
+			height: 5em;
+			overflow: hidden;
+			width: 350px;
+		}
+
+		#picapp-detailbox-fullsize {
+			overflow: hidden;
+		}
+			#picapp-detailbox-fullsize img {
+				display: block;
+				margin: 1em auto;
+				text-align: center;
+			}
+		.picapp-detailbox-fullsize-caption {
+			text-align: center;
+		}
+
+		.picapp-detailbox-sponsored {
+			background: url('../images/sponsored.jpg') no-repeat top center;
+			display: block;
+			height: 60px;
+			line-height: 40px;
+			margin: 1em auto;
+			text-align: center;
+			width: 234px;
+		}
+			.picapp-detailbox-sponsored span {
+				display: block;
+				overflow: hidden;
+				text-indent: -999em;
+			}
+	.picapp-detailbox-options {
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	.picapp-detailbox-options:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+		.picapp-detailbox-options-panel .picapp-size-section,
+		.picapp-detailbox-options-panel .picapp-alignment-section {
+			clear: both;
+			display: block;
+		}
+
+		.picapp-size-section {
+			margin-bottom: .5em;
+		}
+
+		.picapp-size-section:after {
+			content: "."; 
+			display: block; 
+			height: 0; 
+			clear: both; 
+			visibility: hidden;
+		}
+
+			.picapp-detailbox-options-panel .picapp-input-item {
+				float: left;
+				margin: 1em 1em 0 0;
+			}
+			
+				.picapp-detailbox-options-panel .picapp-input-item input {
+				}
+
+			.picapp-detailbox-options-panel .picapp-alignment-section .picapp-image-align {
+				display: inline;
+				text-align: left;
+			}	
+
+			#image-wrap-input-item {
+				clear: both;
+				display: block;
+				width: 300px;
+			}
+
+			.picapp-detailbox-options-panel .picapp-alignment-section #picapp-image-align-none,
+			.picapp-detailbox-options-panel .picapp-alignment-section #picapp-image-wrap {
+				background: none;
+				text-indent: 0;
+			}
+
+			span#picapp-image-align-status {
+				background-image: url('../images/align-icons.png'); 
+				background-repeat: no-repeat;
+				display: block;
+				float: right;
+				height: 44px;
+				width: 44px;
+			}
+
+			span.picapp-image-align-none {
+				background-position: -999px;
+			}
+
+			span.picapp-image-align-left {	
+				background-position: 0 0;
+			}
+			
+			span.picapp-image-align-left-wrapped {	
+				background-position: -50px -51px;
+			}
+			
+			span.picapp-image-align-center {
+				background-position: -49px 0px;
+			}
+			
+			span.picapp-image-align-right {
+				background-position: -99px 0px;
+			}
+			
+			span.picapp-image-align-right-wrapped {
+				background-position: -1px -51px;
+			}
+		.picapp-detailbox-options-panel .picapp-form-field,
+		.picapp-detailbox-options-panel .picapp-form-label {
+		}
+
+		ul#picapp-sizing-options {
+			padding-left: 0;
+		}
+			li.picapp-size {
+				display: inline;
+				margin-right: 1em;
+			}
+				li.picapp-size input {
+					margin-right: .5em;
+				}
+/* the nav links */
+
+#picapp-links {
+	bottom: 3px;
+	position: absolute;
+}
+	#picapp-links ul {
+
+	}
+		#picapp-links ul li.picapp-links-footer {
+			display: inline;
+		}
